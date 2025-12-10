@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: ai-worship-guard-server
+    env: python
+    plan: free
+    region: oregon
+    buildCommand: ""
+    startCommand: "python server.py"
+    autoDeploy: true
+    envVars: []
+    port: 10000
